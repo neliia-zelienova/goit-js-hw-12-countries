@@ -3,7 +3,7 @@ import 'toastr/build/toastr.min.css';
 
 import * as debounce from 'lodash.debounce';
 import { getCountriesList } from './js/api.js';
-import { handler, checkCountryName, noMatchesFound } from './js/res-handling.js'
+import { handler, checkCountryName, noMatchesFound } from './js/countries-handling.js'
 
 const inputRef = document.querySelector('.input');
 
