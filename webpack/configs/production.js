@@ -22,7 +22,6 @@ module.exports = env => ({
   },
   module: {
     rules: [
-       { test: /\.hbs$/, exclude: /node_modules/, use: "handlebars-loader" },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
@@ -36,6 +35,7 @@ module.exports = env => ({
           'sass-loader',
         ],
       },
+       { test: /\.handlebars$/, loader: "handlebars-loader" }
     ],
   },
   plugins: [
