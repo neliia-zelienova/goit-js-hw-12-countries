@@ -26,7 +26,7 @@ export const checkCountryName = (name) => {
   if (!/[^a-zA-Z]/.test(name) && name !== '') {
       return name;
   }
-    else if (/[^a-zA-Z]/.test(name)) {
+    else if (/[^a-zA-Z]\s/.test(name)) {
     toastr.error("Only english characters are allowed!");
   }
   else if (name === '') clearContainer();
